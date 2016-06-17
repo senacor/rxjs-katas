@@ -1,0 +1,11 @@
+body {
+    padding: 10px;
+}
+#output {
+    border-top: 1px solid #aaaaaa;
+    margin-top: 20px;
+    padding-top:10px;
+}
+#output div {
+    margin: 5px;
+}
