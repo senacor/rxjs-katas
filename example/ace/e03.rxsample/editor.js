@@ -1,4 +1,4 @@
-(function(){
+$(document).ready(function(){
 
 	//setup editor
    var editor = ace.edit("editor");
@@ -24,5 +24,5 @@
 	//load Editor value
 	editor.setValue("function foo(items) {\n  var x = \"All this is syntax highlighted\";\n  return x;\n}");
 
-}());
+});
     
