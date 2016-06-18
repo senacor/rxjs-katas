@@ -16,7 +16,7 @@ describe('E43_Promise_SumMultiplePlanes', function () {
       var planes = ["Boeing_777","Boeing_747"];
       var parseBuildCountPromises = [];
 
-      //get article on 777
+      //get articles
       planes.forEach(function(plane){
          parseBuildCountPromises.push(wikipediaService.fetchArticlePromise(plane)
             .then(function (article){ return article.content;})
