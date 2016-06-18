@@ -1,13 +1,11 @@
 /**
  * @author Dr. Michael Menzel, Senacor Technologies AG
  */
-describe('Map Example', function () {
+describe('Buffer Example', function () {
 
    it('that the stream is transformed', function (done) {
-      Rx.Observable.from(["Michael", "Andreas"])
-         .map(function(firstName){
-            return "vorname=" + firstName;
-         })
+      Rx.Observable.range(1,15)
+         .bufferWithCount(5)
          .subscribe(
             function(next) {console.log("next: " + next) },
             function(error) {console.log("error: " + error) },

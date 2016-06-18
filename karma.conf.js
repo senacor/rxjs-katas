@@ -21,7 +21,12 @@ module.exports = function(config) {
       'common/*.js',
       //'test/js/example/async/**/*.js'
       //'example/async/e2.callback/E21_Callback_CountPlanes.spec.js'
-      'example/async/*.js'
+      //'example/async/*.js'
+
+      //'example/rxjs/transforming/map.js',
+      //'example/rxjs/transforming/flatmap.js',
+      //'example/rxjs/transforming/buffer.js',
+      'example/rxjs/combining/zip.js'
     ],
 
 
