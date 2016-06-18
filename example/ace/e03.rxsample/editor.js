@@ -14,14 +14,15 @@
 		console.log("Editor Changed!");
 	});
 
-	//load Editor value
-	editor.setValue("function foo(items) {\n  var x = \"All this is syntax highlighted\";\n  return x;\n}");
-
 	//setup subscription
 	var subscription = Rx.Observable.fromEvent(editor, "change")
 	  .skip(1)
 	  .sample(1500)
 	  .subscribe(saveInBackend);
+
+
+	//load Editor value
+	editor.setValue("function foo(items) {\n  var x = \"All this is syntax highlighted\";\n  return x;\n}");
 
 }());
     

@@ -26,7 +26,8 @@ module.exports = function(config) {
       //'example/rxjs/transforming/map.js',
       //'example/rxjs/transforming/flatmap.js',
       //'example/rxjs/transforming/buffer.js',
-      'example/rxjs/combining/zip.js'
+      //'example/rxjs/combining/zip.js',
+      'example/rxjs/combining/merge.js'
     ],
 
 

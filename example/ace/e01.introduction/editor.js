@@ -9,8 +9,10 @@
    editor.setTheme("ace/theme/twilight");
    editor.getSession().setMode("ace/mode/javascript");
 
+	//register on change handler
 	editor.getSession().on('change', function(e) {
 		console.log("Editor Changed!");
+		saveInBackend()
 	});
 
 	//load Editor value

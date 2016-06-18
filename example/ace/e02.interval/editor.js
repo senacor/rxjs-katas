@@ -9,9 +9,6 @@
 		console.log("save invoked ...");
 	}
 
-	//load Editor value
-	editor.setValue("function foo(items) {\n  var x = \"All this is syntax highlighted\";\n  return x;\n}");
-
 	///////////////////////////////////////////////////////////////////////
 	//sample on change events
 
@@ -40,6 +37,10 @@
 	}
 
 	checkEditorChangesInInterval();
+
+	////////////////////////////////////////////////////////////////////////
+	//load Editor value
+	editor.setValue("function foo(items) {\n  var x = \"All this is syntax highlighted\";\n  return x;\n}");
 
 }());
     
