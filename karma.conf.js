@@ -20,7 +20,8 @@ module.exports = function(config) {
       'lib/rx.all.js',
       'common/*.js',
       //'test/js/example/async/**/*.js'
-      'example/async/e2.callback/E21_Callback_CountPlanes.spec.js'
+      //'example/async/e2.callback/E21_Callback_CountPlanes.spec.js'
+      'example/async/*.js'
     ],
 
 

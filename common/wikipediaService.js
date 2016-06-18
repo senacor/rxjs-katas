@@ -6,15 +6,24 @@ var wikipediaService = function() {
   /**
    * fetches a wiki article as a media wiki formated string
    * @param articleName name of the article to be fetched
+   * @return the fetched wikipedia article
+   */
+  service.fetchArticle = function(articleName) {
+      wikipediaArticleAdapterMock.fetchArticle(articleName);
+  };
+
+
+  /**
+   * fetches a wiki article as a media wiki formated string
+   * @param articleName name of the article to be fetched
    * @param successHandler callback to handle the result
    * @param errorHandler callback to handle errors
    */
   service.fetchArticleCallback = function(articleName, successHandler, errorHandler) {
     if (MOCKMODE){
-      wikipediaArticleAdapterMock.fetchArticleCallback(articleName, successHandler, errorHandler)
-    } else
-    {
-      wikipediaArticleAdapter.fetchArticleCallback(articleName, successHandler, errorHandler)
+      wikipediaArticleAdapterMock.fetchArticleCallback(articleName, successHandler, errorHandler);
+    } else {
+      wikipediaArticleAdapter.fetchArticleCallback(articleName, successHandler, errorHandler);
     }
   };
 
