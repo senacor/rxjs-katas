@@ -13,7 +13,7 @@ describe('E43_Promise_SumMultiplePlanes', function () {
             }, 0);
          }
 
-      var planes = ["Boeing_777","Boeing_747"];
+      var planes = ["Boeing 777","Boeing 747"];
       var parseBuildCountPromises = [];
 
       //get articles

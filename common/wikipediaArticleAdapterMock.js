@@ -15,7 +15,6 @@ var wikipediaArticleAdapterMock = function () {
             if (articles[key]) {
                return articles[key];
             } else {
-               console.log("DEFAULT");
                var article = articles[defaultKey];
                article.title = key;
                console.log(article);

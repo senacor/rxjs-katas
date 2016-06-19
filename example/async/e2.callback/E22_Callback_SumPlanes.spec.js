@@ -15,8 +15,8 @@ describe('E22_Callback_SumPlanes', function () {
         };
 
         //get article on 777
-        wikipediaService.fetchArticleCallback("Boeing_777", function(article777) {
-            wikipediaService.fetchArticleCallback("Boeing_747", function(article747) {
+        wikipediaService.fetchArticleCallback("Boeing 777", function(article777) {
+            wikipediaService.fetchArticleCallback("Boeing 747", function(article747) {
                 //extract and print number of built planes
                 var buildCount777 = wikipediaService.parseBuildCount(article777.content);
                 var buildCount747 = wikipediaService.parseBuildCount(article747.content);

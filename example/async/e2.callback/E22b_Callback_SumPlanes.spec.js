@@ -26,14 +26,14 @@ describe('E23_Callback_SumPlanes', function () {
         };
 
         //get article on 777
-        wikipediaService.fetchArticleCallback("Boeing_777", function(article777) {
+        wikipediaService.fetchArticleCallback("Boeing 777", function(article777) {
             //extract and print number of built planes
             buildCount777 = wikipediaService.parseBuildCount(article777.content);
             processResult();
         }, exceptionHandler);
 
         //get article on 747
-        wikipediaService.fetchArticleCallback("Boeing_747", function(article747) {
+        wikipediaService.fetchArticleCallback("Boeing 747", function(article747) {
             //extract and print number of built planes
             buildCount747 = wikipediaService.parseBuildCount(article747.content);
             processResult();

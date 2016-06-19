@@ -8,12 +8,12 @@ describe('E42_Promise_SumPlanes', function () {
    it('that plane build count is summed with futures', function (done) {
 
       //get article on 777
-      var parseBuildCount777promise = wikipediaService.fetchArticlePromise("Boeing_777")
+      var parseBuildCount777promise = wikipediaService.fetchArticlePromise("Boeing 777")
          .then(function (article){ return article.content;})
          .then(wikipediaService.parseBuildCount);
 
       //get article on 747
-      var parseBuildCount747promise = wikipediaService.fetchArticlePromise("Boeing_747")
+      var parseBuildCount747promise = wikipediaService.fetchArticlePromise("Boeing 747")
          .then(function (article){ return article.content;})
          .then(wikipediaService.parseBuildCount);
 

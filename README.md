@@ -1,7 +1,7 @@
 rxjs-katas
 ============
 
-RxJS exercises and examples
+RxJS exercises and examples.
 
 To get started with Reactive X please refer to: http://reactivex.io/documentation/operators.html
 
