@@ -7,9 +7,9 @@
 
 describe('E13_Call_SumMultiplesPlanes', function () {
 
-    it('that plane build count is fetched', function (done) {
+    it('that plane build count is fetched', function () {
 
-        var planes = ["Boeing_777","Boeing_747"];
+        var planes = ["Boeing 777","Boeing 747"];
         var buildCount = 0;
 
         planes.forEach(function(plane) {

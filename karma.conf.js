@@ -15,19 +15,39 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
+      //libs
       'node_modules/babel-polyfill/dist/polyfill.js',
-      'node_modules/jquery/dist/jquery.min.js',
+      'lib/jquery-3.0.0.min.js',
       'lib/rx.all.js',
-      'common/*.js',
-      //'test/js/example/async/**/*.js'
-      //'example/async/e2.callback/E21_Callback_CountPlanes.spec.js'
-      //'example/async/*.js'
+       //include common components
+      'common/completeMonitor.js',
+      'common/output.js',
+      'common/summary.js',
+      'common/wikipediaArticleAdapter.js',
+      'common/wikipediaArticleAdapterMock.js',
+      'common/wikipediaService.js',
+
+      // async example
+      'example/async/**/*.js'
+
+      // rxjs examples
+      //'example/rxjs/create/create.js'
+      //'example/rxjs/create/defer.js'
+      //'example/rxjs/create/empty.js'
+      //'example/rxjs/create/from.js'
+      //'example/rxjs/create/just.js'
+
+      //'example/rxjs/filtering/distinct.js'
+      //'example/rxjs/filtering/filter.js'
+      //'example/rxjs/filtering/skip.js'
+      //'example/rxjs/filtering/take.js'
 
       //'example/rxjs/transforming/map.js',
       //'example/rxjs/transforming/flatmap.js',
       //'example/rxjs/transforming/buffer.js',
+
       //'example/rxjs/combining/zip.js',
-      'example/rxjs/combining/merge.js'
+      //'example/rxjs/combining/merge.js'
     ],
 
 
@@ -38,8 +58,8 @@ module.exports = function(config) {
 
     plugins: [
       'karma-jasmine',
-      'karma-phantomjs-launcher'//,
-     // require('./lib')
+      'karma-phantomjs-launcher',
+      require('./lib')
     ],
 
 
@@ -80,12 +100,5 @@ module.exports = function(config) {
     // how many browser should be started simultanous
     concurrency: Infinity
 
-    /*
-    client: {
-      captureConsole: true,
-      mocha: {
-        bail: true
-      }
-    }*/
   })
-}
+};

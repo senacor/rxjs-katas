@@ -1,7 +1,7 @@
 var wikipediaService = function() {
   var service = {};
 
-  var MOCKMODE = false;
+  var MOCKMODE = true;
 
   /**
    * fetches a wiki article as a media wiki formated string
@@ -9,7 +9,7 @@ var wikipediaService = function() {
    * @return the fetched wikipedia article
    */
   service.fetchArticle = function(articleName) {
-      wikipediaArticleAdapterMock.fetchArticle(articleName);
+      return wikipediaArticleAdapterMock.fetchArticle(articleName);
   };
 
 

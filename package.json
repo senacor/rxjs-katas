@@ -28,8 +28,7 @@
   },
   "license": "ISC",
   "dependencies": {
-    "babel-core": "^6.0.0",
-    "jquery": "^2.2.3"
+    "babel-core": "^6.0.0"
   },
   "devDependencies": {
     "babel-polyfill": "^6.0.2",
