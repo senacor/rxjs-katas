@@ -16,9 +16,9 @@ $(document).ready(function(){
 
 	var observableEventStream = Rx.Observable.fromEvent(editor, "change");
 
-	// 1) Subscribe to the event stream to invoke saveInBackend
-	// 2) Filter the first event to suppress the document loading
-	// 3) Filter the event stream to emit the most recent event within 2 ms
+	// 1) Filter the first event to suppress the document loading
+	// 2) Filter the event stream to emit the most recent event within 2 ms
+	// 3) Subscribe to the event stream to invoke saveInBackend
 
 
 	//load Editor value

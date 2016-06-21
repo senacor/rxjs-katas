@@ -28,14 +28,14 @@ module.exports = function(config) {
       'common/wikipediaService.js',
 
       // async example
-      'example/async/**/*.js'
+      'example/async/**/*.js',
 
       // rxjs examples
-      //'example/rxjs/create/create.js'
+      'example/rxjs/create/create.js',
       //'example/rxjs/create/defer.js'
       //'example/rxjs/create/empty.js'
       //'example/rxjs/create/from.js'
-      //'example/rxjs/create/just.js'
+      'example/rxjs/create/just.js'
 
       //'example/rxjs/filtering/distinct.js'
       //'example/rxjs/filtering/filter.js'
