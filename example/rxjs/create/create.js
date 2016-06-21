@@ -32,15 +32,18 @@ describe('Create Example', function () {
          return "first";
       };
 
-      Rx.Observable.create(function(subscriber){
+      var obs = Rx.Observable.create(function(subscriber){
             try {
                subscriber.onNext(getValue());
                subscriber.onCompleted();
             } catch (e) {
                subscriber.onError(e);
             }
-         })
-         .subscribe(
+         });
+
+      console.log("Observable created");
+
+      obs.subscribe(
             function(next) {console.log("next: " + next) },
             function(error) {console.log("error: " + error) },
             function() {
